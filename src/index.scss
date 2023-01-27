@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+* {
+  font-family: 'Sen', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+}
+
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  // display: flex;
+  justify-content: center;
+}
+
+input,
+input:focus,
+input:hover,
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+textarea,
+textarea:focus,
+textarea:hover,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}

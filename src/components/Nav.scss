@@ -1,0 +1,51 @@
+.nav {
+  height: 80px;
+  //   background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .container {
+    display: flex;
+    gap: 550px;
+  }
+  .logo {
+    font-weight: 800;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .menu-list {
+    display: flex;
+    gap: 30px;
+    height: 80px;
+    color: rgb(180, 180, 180);
+    .menu {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 100px;
+      height: 100%;
+      color: rgb(180, 180, 180);
+    }
+
+    .menu:hover {
+      color: skyblue;
+      cursor: pointer;
+    }
+    .contact-btn {
+      font-weight: 700;
+      background-color: rgb(10, 10, 201);
+      color: white;
+      transition: background-color 350ms cubic-bezier(0.165, 0.84, 0.44, 1),
+        color 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      width: 150px;
+    }
+    .contact-btn:hover {
+      color: white;
+      background-color: rgb(6, 6, 128);
+    }
+  }
+}
