@@ -43,11 +43,11 @@ function Homepage() {
         click_contact={click_contact}
       />
       <div className="homepage" ref={home}>
-        <div className="photo" data-aos="slide-right">
+        <div className="photo" data-aos="fade-left">
           <img src={Profile} alt="Profile" />
         </div>
         <div className="intro">
-          <div className="intro-text" data-aos="slide-left">
+          <div className="intro-text" data-aos="fade-left">
             {' '}
             I'm Rawitch Payakkawan. A Computer Engineer
             <br />
@@ -57,7 +57,7 @@ function Homepage() {
           </div>
           <div
             className="passionate"
-            data-aos="slide-left"
+            data-aos="fade-left"
             data-aos-delay="60"
             data-aos-duration="2800"
           >
