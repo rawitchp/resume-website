@@ -10,7 +10,7 @@
   }
   .pj1,
   .pj2 {
-      font-weight: 700;
+    font-weight: 700;
     .dl-resume {
       font-size: 20px;
       margin-top: 20px;
@@ -34,6 +34,21 @@
       color: black;
       margin-bottom: 50px;
       font-weight: 700;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      .card {
+        max-width: 330px;
+      }
     }
   }
 }

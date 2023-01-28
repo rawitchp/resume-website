@@ -2,15 +2,17 @@
   margin-top: 150px;
   display: flex;
   justify-content: center;
-  height: 500px;
-  width: 100vw;
+  height: auto;
+  // width: 100vw;
   gap: 0;
   background-color: rgb(113, 113, 113);
+  z-index: 999;
   .container {
     padding: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 999;
     div {
       font-size: 48px;
       font-weight: 700;
@@ -20,6 +22,7 @@
       font-size: 24px;
       width: 500px;
       font-weight: normal;
+      z-index: 999;
     }
   }
   .mypic {
@@ -31,6 +34,37 @@
     img {
       height: 1100px;
       margin-top: -140px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 500px;
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      p {
+        max-width: 90vw;
+      }
+    }
+    .mypic {
+      position: absolute;
+      top: 2190px;
+      right: 0;
+      width: 100vh;
+      img {
+        height: 1800px;
+        margin-top: -300px;
+        margin-left: 40px;
+        // margin-right: -20px;
+      }
     }
   }
 }

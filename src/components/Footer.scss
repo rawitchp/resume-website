@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: auto;
   background-color: #181823;
   .container {
     display: flex;
@@ -37,5 +37,24 @@
   .created {
     font-size: 16px;
     color: rgb(180, 180, 180);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    .container {
+      gap: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .footer-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0px;
+      }
+    }
   }
 }

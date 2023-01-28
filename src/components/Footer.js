@@ -5,7 +5,8 @@ import Ig from '../pics/ig-logo.png';
 import LinkedIn from '../pics/linkedin-logo.png';
 import Gh from '../pics/gh-logo.png';
 
-function Footer() {
+function Footer(props) {
+  const { click_home, click_about, click_pj, click_contact } = props;
   return (
     <div className="footer">
       <div className="container">
@@ -45,10 +46,10 @@ function Footer() {
           </div>
         </div>
         <div className="footer-menu">
-          <div>Home</div>
-          <div>About Me</div>
-          <div>Project</div>
-          <div>Contact Me</div>
+          <div onClick={click_home}>Home</div>
+          <div onClick={click_about}>About Me</div>
+          <div onClick={click_pj}>Project</div>
+          <div onClick={click_contact}>Contact Me</div>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Nav from '../components/Nav';
 import './Homepage.scss';
 import Aos from 'aos';
@@ -12,13 +12,37 @@ import Activities from '../components/Activities';
 import Skills from '../components/Skills';
 
 function Homepage() {
+  const exp = useRef(null);
+  const pj = useRef(null);
+  const contact = useRef(null);
+  const home = useRef(null);
+  const about = useRef(null);
+  const click_exp = () => {
+    exp.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const click_pj = () => {
+    pj.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const click_contact = () => {
+    contact.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const click_home = () => {
+    home.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const click_about = () => {
+    about.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
     <div className="page">
-      <Nav />
-      <div className="homepage">
+      <Nav
+        click_exp={click_exp}
+        click_pj={click_pj}
+        click_contact={click_contact}
+      />
+      <div className="homepage" ref={home}>
         <div className="photo" data-aos="slide-right">
           <img src={Profile} alt="Profile" />
         </div>
@@ -43,12 +67,29 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <About />
-      <Skills />
-      <Projects />
-      <Activities />
-      <Contact />
-      <Footer />
+      <div ref={about} className="comp">
+        <About />
+      </div>
+      <div className="comp">
+        <Skills />
+      </div>
+      <div ref={pj} className="comp">
+        <Projects />
+      </div>
+      <div ref={exp} className="comp">
+        <Activities />
+      </div>
+      <div ref={contact} className="comp">
+        <Contact />
+      </div>
+      <div className="comp">
+        <Footer
+          click_pj={click_pj}
+          click_contact={click_contact}
+          click_home={click_home}
+          click_about={click_about}
+        />
+      </div>
     </div>
   );
 }

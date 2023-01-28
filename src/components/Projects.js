@@ -16,7 +16,7 @@ function Projects() {
             </a>
           </div>
           <div data-aos="slide-up" data-aos-delay="500">
-            <Card style={{ width: '15rem' }}>
+            <Card style={{ width: '15rem' }} className='card'>
               {/* <Card.Img variant="top" src={P1} /> */}
               <Card.Body>
                 <Card.Title>Mrw Store</Card.Title>
@@ -37,7 +37,7 @@ function Projects() {
             </Card>
           </div>
           <div data-aos="slide-up" data-aos-delay="500">
-            <Card style={{ width: '15rem' }}>
+            <Card style={{ width: '15rem' }} className='card'>
               {/* <Card.Img variant="top" src={P1} /> */}
               <Card.Body>
                 <Card.Title>KUlony</Card.Title>
@@ -61,7 +61,7 @@ function Projects() {
         </div>
         <div className="pj2">
           <div data-aos="slide-up" data-aos-delay="500">
-            <Card style={{ width: '15rem' }}>
+            <Card style={{ width: '15rem' }} className='card'>
               {/* <Card.Img variant="top" src={P1} /> */}
               <Card.Body>
                 <Card.Title>YAYA FEVER</Card.Title>
@@ -83,7 +83,7 @@ function Projects() {
             </Card>
           </div>
           <div data-aos="slide-up" data-aos-delay="500">
-            <Card style={{ width: '15rem' }}>
+            <Card style={{ width: '15rem' }} className='card'>
               {/* <Card.Img variant="top" src={P1} /> */}
               <Card.Body>
                 <Card.Title>Tracker App</Card.Title>
