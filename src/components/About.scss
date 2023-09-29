@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   height: auto;
-  // width: 100vw;
+  // width: 50vw;
   gap: 0;
   background-color: rgb(113, 113, 113);
   z-index: 999;
@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(113, 113, 113);
+    margin-left: 30px;
     z-index: 999;
     div {
       font-size: 48px;
@@ -31,6 +33,7 @@
     width: 50vw;
     overflow: hidden;
     right: 0;
+    z-index: 1000;
     img {
       height: 1100px;
       margin-top: -140px;
@@ -50,6 +53,7 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      margin-left: 0px;
       p {
         max-width: 90vw;
       }
@@ -58,13 +62,33 @@
       position: absolute;
       top: 2190px;
       right: 0;
-      width: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
       img {
         height: 1800px;
         margin-top: -300px;
-        margin-left: 40px;
-        // margin-right: -20px;
+        margin-left: -40px;
+        margin-right: -20px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .mypic {
+    position: absolute;
+    top: 2190px;
+    right: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    img {
+      height: 700px !important;
+      margin-top: 100px !important;
+      margin-left: -40px;
+      margin-right: -20px;
     }
   }
 }

@@ -44,7 +44,7 @@ function Homepage() {
       />
       <div className="homepage" ref={home}>
         <div className="photo" data-aos="fade-left">
-          <img src={Profile} alt="Profile" />
+          <img src={Profile} alt="Profile" className='profile'/>
         </div>
         <div className="intro">
           <div className="intro-text" data-aos="fade-left">

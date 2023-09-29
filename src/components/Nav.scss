@@ -2,14 +2,17 @@
   min-height: 80px;
   height: auto;
   //   background-color: black;
-  width: 100vw;
+  width: 100vw !important;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   .container {
     display: flex;
-    gap: 550px;
+    // gap: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .logo {
     font-weight: 800;
